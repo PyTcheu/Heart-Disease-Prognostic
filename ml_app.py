@@ -41,19 +41,19 @@ def run_ml_app():
     col1, col2 = st.columns(2)
 
     with col1:
-        age = st.number_input('Age')
-        sex = st.radio('Sex',['M','F'])
-        chest_pain_type = st.radio('Chest Pain Type',['ASY','NAP','ATA','TA'])
+        age = st.number_input('Age',step=1)
+        
         resting_bp = st.number_input('Resting BP',step=1)
         cholesterol = st.number_input('Cholesterol',step=1)
-        
+        chest_pain_type = st.radio('Chest Pain Type',['ASY','NAP','ATA','TA'])
+        oldpeak = st.number_input('Oldpeak',step=0.1)
+        max_hr = st.number_input('Max Heart Rate',step=1)
 
     with col2:
-        fasting_bs = st.number_input('Fasting BS',step=1)
+        sex = st.radio('Sex',['M','F'])
+        fasting_bs = st.radio('Fasting BS',[1,0])
         resting_ecg = st.radio('Resting ECG',['Normal','LVH','ST'])
-        max_hr = st.number_input('Max Heart Rate',step=1)
         exercise_angina = st.radio('Exercise Angina',['Yes','No'])
-        oldpeak = st.number_input('Oldpeak',step=0.1)
         st_slope = st.radio('ST Slope',['Up','Down','Flat'])
         
 
