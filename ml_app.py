@@ -1,7 +1,7 @@
 import streamlit as st
 from pycaret.classification import *
 
-hdp_model = load_model('hdp_model_19-10-2021 23-58-07')
+hdp_model = load_model('hdp_model_12-11-2021 19-57-58')
 
 attrib_info = """
 #### Attribute Information:

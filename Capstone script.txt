@@ -1,0 +1,3 @@
+Instead of choosing model per model, I decided to automate it and benchmark top n models
+Then I could get a wide set of options for my final model.
+
